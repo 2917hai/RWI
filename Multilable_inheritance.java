@@ -1,44 +1,43 @@
-package Umesh;
-class parentt
+import java.util.Scanner;
+
+class Parent
 {
-    int a=+60;
-    int b = 30;
-    void sum()
-    {
-        int sum=a+b;
-        System.out.println(sum);
+    void get() {
+        Scanner sc = new Scanner(System.in);
+        int no = sc.nextInt();
+        System.out.println(no);
+
     }
 }
-class child1 extends parentt
+class child extends parent
 {
-    void devid()
+    void set()
     {
-        int dev=a/b;
-        System.out.println(dev);
+        Scanner scc= new Scanner(System.in);
+        int numm= scc.nextInt();
+        System.out.println("numm");
+        parent p= new parent();
+        p.getClass();
     }
+
 }
-class child2 extends child1
+class Info extends child
 {
-    void sub()
-    {
-        int sub=a-b;
-        System.out.println(sub);
+    void info() {
+
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("pleae your name ");
+        String name= sc.next();
     }
+
 }
-class child3 extends child2
-{
-    void mult()
-    {
-        int mult=a*b;
-        System.out.println(mult);
-    }}
 public class Multilable_inheritance {
     public static void main(String[] args) {
-        child3 ram=new child3();
-        ram.sub();
-        ram.mult();
-        ram.sum();
-        ram.devid();
+        Info in= new Info();
+        in.info();
+        in.set();
+
 
     }
 }
